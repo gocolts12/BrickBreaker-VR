@@ -9,7 +9,6 @@
     }
   ],
   "dependencies": {
-    "io.extendreality.vrtk.prefabs": "1.1.5",
     "com.unity.collab-proxy": "1.2.16",
     "com.unity.ext.nunit": "1.0.0",
     "com.unity.ide.rider": "1.1.0",
@@ -22,6 +21,7 @@
     "com.unity.xr.legacyinputhelpers": "2.0.6",
     "com.unity.xr.oculus.standalone": "1.38.4",
     "com.unity.xr.openvr.standalone": "1.0.5",
+    "io.extendreality.vrtk.prefabs": "1.1.5",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
