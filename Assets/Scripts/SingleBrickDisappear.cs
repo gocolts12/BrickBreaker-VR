@@ -7,8 +7,7 @@ public class SingleBrickDisappear : MonoBehaviour
     public GameObject bricks;
 
     void Start()
-    {
-        bricks = GameObject.Find("brick");
+    { 
 
         bricks.active = true;
     }
