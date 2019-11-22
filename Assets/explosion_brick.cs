@@ -19,7 +19,7 @@ public class explosion_brick : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (!explode.isPlaying) {
-            explode.Play();
+            explode.Emit(100);
             //explode.Stop();
         }
 
