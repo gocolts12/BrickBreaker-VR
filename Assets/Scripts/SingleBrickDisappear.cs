@@ -15,6 +15,7 @@ public class SingleBrickDisappear : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         bricks.active = false;
+        Scoring.score += 1;
     }
 
 }

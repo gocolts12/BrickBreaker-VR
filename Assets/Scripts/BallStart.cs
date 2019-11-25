@@ -9,7 +9,7 @@ public class BallStart : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        this.transform.Rotate(Random.Range(-30, 30), Random.Range(-30, 30), 0, Space.Self);
+        gameObject.transform.Rotate(Random.Range(-30, 30), Random.Range(-30, 30), 0, Space.Self);
         rb.velocity = new Vector3(0, 0, 5);
     }
 
