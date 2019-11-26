@@ -16,6 +16,7 @@ public class BallStart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //give a constant acceleration
         
     }
 }
