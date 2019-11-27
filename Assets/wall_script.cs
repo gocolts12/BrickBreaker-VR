@@ -2,38 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bricks_To_Head_Script : MonoBehaviour
+public class wall_script : MonoBehaviour
 {
-    public GameObject bricks;
     public GameObject ball;
 
-    Rigidbody rball;
-    Rigidbody rbrick;
+    Rigidbody rb;
 
     public Vector3 veloc;
 
+    public Vector3 temp;
     // Start is called before the first frame update
     void Start()
     {
-        rball = ball.GetComponent<Rigidbody>();
-        rball.velocity = new Vector3(0, 0, 5);
-
-        rbrick = bricks.GetComponent<Rigidbody>();
-
+        rb = ball.GetComponent<Rigidbody>();
+        rb.velocity = new Vector3(0, 0, 5);
     }
-
-   /* void OnTriggerEnter(Collider other)
-    {
-        //bricks.active = false;
-        Scoring.score += 1;
-
-        bricks.active = true;
-        rb = GetComponent<Rigidbody>();
-
-        //bricks.transform.Random.Range(-30, 30), 0, Space.Self);
-
-        rb.velocity = new Vector3(0, 0, -5);
-    }*/
 
     void OnCollisionEnter(Collision collision)
     {
@@ -41,9 +24,9 @@ public class Bricks_To_Head_Script : MonoBehaviour
         //Check for a match with the specified name on any GameObject that collides with your GameObject
         if (collision.gameObject.name == ball.name)
         {
-            veloc = rball.velocity;
+            veloc = rb.velocity;
             //bricks.active = false;
-            Scoring.score += 1;
+            //Scoring.score += 1;
         }
     }
 
@@ -54,8 +37,7 @@ public class Bricks_To_Head_Script : MonoBehaviour
         if (other.gameObject.name == ball.name)
         {
             //bricks.active = false;
-            rball.velocity += veloc;
-            rbrick.velocity = new Vector3(0, 0, -5);
+            
 
         }
     }

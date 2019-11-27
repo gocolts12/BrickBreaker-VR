@@ -1442,6 +1442,7 @@ GameObject:
   - component: {fileID: 56127356}
   - component: {fileID: 56127355}
   - component: {fileID: 56127358}
+  - component: {fileID: 56127359}
   m_Layer: 0
   m_Name: Back Wall
   m_TagString: Untagged
@@ -1534,8 +1535,23 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10.000005, y: 0.0000004768373, z: 10.000002}
-  m_Center: {x: 0, y: 0, z: -0.0000014305115}
+  m_Size: {x: 10.000005, y: 0.21535358, z: 10.000002}
+  m_Center: {x: -0, y: -0.10767657, z: -0.0000014305108}
+--- !u!114 &56127359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56127353}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3626016f44c742640b59ca0260c818ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 1346376989}
+  veloc: {x: 0, y: 0, z: 0}
+  temp: {x: 0, y: 0, z: 0}
 --- !u!1 &58834923
 GameObject:
   m_ObjectHideFlags: 0
@@ -3688,9 +3704,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 638fa29dfa6af974393b6f2b29cfb441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bricks: {fileID: 175290887}
-  bricks2: {fileID: 8296172668321975597}
+  bricks: {fileID: 189360704}
+  bricks2: {fileID: 7553868939667729459}
   explode: {fileID: 198656288491427277}
+  ball: {fileID: 1346376989}
+  veloc: {x: 0, y: 0, z: 0}
 --- !u!1 &196262689
 GameObject:
   m_ObjectHideFlags: 0
@@ -4675,7 +4693,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 169d2a59fe9cf824c8b233df722baf1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bricks: {fileID: 1706661425}
+  bricks: {fileID: 223181303}
+  ball: {fileID: 1346376989}
+  veloc: {x: 0, y: 0, z: 0}
 --- !u!1 &223235738
 GameObject:
   m_ObjectHideFlags: 0
@@ -6996,6 +7016,7 @@ GameObject:
   - component: {fileID: 350396147}
   - component: {fileID: 350396146}
   - component: {fileID: 350396150}
+  - component: {fileID: 350396151}
   m_Layer: 0
   m_Name: Left Wall
   m_TagString: Untagged
@@ -7088,8 +7109,23 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10.000002, y: 0.000002384186, z: 10.000005}
-  m_Center: {x: -0.00000047683716, y: 0.0000009536743, z: 0}
+  m_Size: {x: 10.000002, y: 0.69860023, z: 10.000005}
+  m_Center: {x: -0.00000047683693, y: -0.34929803, z: 0}
+--- !u!114 &350396151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350396145}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3626016f44c742640b59ca0260c818ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 1346376989}
+  veloc: {x: 0, y: 0, z: 0}
+  temp: {x: 0, y: 0, z: 0}
 --- !u!1 &353399307
 GameObject:
   m_ObjectHideFlags: 0
@@ -8315,7 +8351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43dbab6e18df1014caff20ab63f62ed1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bricks: {fileID: 593782995}
+  bricks: {fileID: 400502526}
   ball: {fileID: 1346376989}
   veloc: {x: 0, y: 0, z: 0}
 --- !u!114 &400502528
@@ -9161,6 +9197,7 @@ GameObject:
   - component: {fileID: 437089562}
   - component: {fileID: 437089561}
   - component: {fileID: 437089564}
+  - component: {fileID: 437089565}
   m_Layer: 0
   m_Name: Cieling
   m_TagString: Untagged
@@ -9253,8 +9290,23 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10, y: 2.220446e-16, z: 10}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 10, y: 0.6858063, z: 10}
+  m_Center: {x: 0, y: -0.34290314, z: 0}
+--- !u!114 &437089565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 437089559}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3626016f44c742640b59ca0260c818ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 1346376989}
+  veloc: {x: 0, y: 0, z: 0}
+  temp: {x: 0, y: 0, z: 0}
 --- !u!1 &442998977
 GameObject:
   m_ObjectHideFlags: 0
@@ -12948,7 +13000,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 623298954}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.959, y: 5.326, z: -8.785}
+  m_LocalPosition: {x: 13.959, y: 6.255, z: -8.785}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 959449004}
@@ -15260,6 +15312,7 @@ GameObject:
   - component: {fileID: 789093646}
   - component: {fileID: 789093645}
   - component: {fileID: 789093648}
+  - component: {fileID: 789093649}
   m_Layer: 0
   m_Name: Left Wall
   m_TagString: Untagged
@@ -15352,8 +15405,23 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10.000002, y: 2.2204466e-16, z: 10}
-  m_Center: {x: 0.0000009536743, y: 0.0000009536743, z: -0.00000047683716}
+  m_Size: {x: 10.000002, y: 1.1077452, z: 9.999999}
+  m_Center: {x: 0.00000095367386, y: -0.55387175, z: -0.00000038146965}
+--- !u!114 &789093649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789093643}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3626016f44c742640b59ca0260c818ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 1346376989}
+  veloc: {x: 0, y: 0, z: 0}
+  temp: {x: 0, y: 0, z: 0}
 --- !u!1 &790713477
 GameObject:
   m_ObjectHideFlags: 0
@@ -17435,6 +17503,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   brick: {fileID: 223181303}
   ball: {fileID: 1346376989}
+  veloc: {x: 0, y: 0, z: 0}
+  temp: {x: 0, y: 0, z: 0}
 --- !u!1 &875897711
 GameObject:
   m_ObjectHideFlags: 0
@@ -23301,6 +23371,7 @@ GameObject:
   - component: {fileID: 1236733231}
   - component: {fileID: 1236733230}
   - component: {fileID: 1236733234}
+  - component: {fileID: 1236733235}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -23393,8 +23464,23 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10, y: 2.220446e-16, z: 10}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 10, y: 0.56884384, z: 10}
+  m_Center: {x: 0, y: -0.28442192, z: 0}
+--- !u!114 &1236733235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236733229}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3626016f44c742640b59ca0260c818ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 1346376989}
+  veloc: {x: 0, y: 0, z: 0}
+  temp: {x: 0, y: 0, z: 0}
 --- !u!1 &1238916257
 GameObject:
   m_ObjectHideFlags: 0
@@ -25651,7 +25737,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1346376989}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.06, y: 0.88, z: 1.169}
+  m_LocalPosition: {x: -0.19, y: 1, z: 1.169}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -27641,6 +27727,7 @@ GameObject:
   - component: {fileID: 1462926123}
   - component: {fileID: 1462926122}
   - component: {fileID: 1462926126}
+  - component: {fileID: 1462926127}
   m_Layer: 0
   m_Name: Right Wall
   m_TagString: Untagged
@@ -27734,8 +27821,23 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10.000002, y: 2.2204466e-16, z: 10}
-  m_Center: {x: 0.00000047683716, y: -0.000002861023, z: 0}
+  m_Size: {x: 10.000002, y: 1.2036533, z: 10}
+  m_Center: {x: 0.00000047683693, y: -0.60182965, z: 0}
+--- !u!114 &1462926127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462926121}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3626016f44c742640b59ca0260c818ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 1346376989}
+  veloc: {x: 0, y: 0, z: 0}
+  temp: {x: 0, y: 0, z: 0}
 --- !u!1 &1466187561
 GameObject:
   m_ObjectHideFlags: 0
@@ -36346,6 +36448,7 @@ GameObject:
   - component: {fileID: 1955065693}
   - component: {fileID: 1955065692}
   - component: {fileID: 1955065695}
+  - component: {fileID: 1955065696}
   m_Layer: 0
   m_Name: Right Wall
   m_TagString: Untagged
@@ -36438,8 +36541,23 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10.000002, y: 0.000002384186, z: 10.000006}
-  m_Center: {x: 0.0000009536743, y: -0.0000009536743, z: 0}
+  m_Size: {x: 10.000002, y: 1.2117834, z: 10.000006}
+  m_Center: {x: 0.0000009536739, y: -0.6058916, z: 0}
+--- !u!114 &1955065696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955065690}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3626016f44c742640b59ca0260c818ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 1346376989}
+  veloc: {x: 0, y: 0, z: 0}
+  temp: {x: 0, y: 0, z: 0}
 --- !u!1 &1957166621
 GameObject:
   m_ObjectHideFlags: 0
@@ -38635,6 +38753,7 @@ GameObject:
   - component: {fileID: 2081523801}
   - component: {fileID: 2081523800}
   - component: {fileID: 2081523804}
+  - component: {fileID: 2081523805}
   m_Layer: 0
   m_Name: Cieling
   m_TagString: Untagged
@@ -38727,8 +38846,23 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10, y: 2.220446e-16, z: 10}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 10, y: 0.56604767, z: 10}
+  m_Center: {x: -0, y: -0.28302383, z: 0}
+--- !u!114 &2081523805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081523799}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3626016f44c742640b59ca0260c818ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 1346376989}
+  veloc: {x: 0, y: 0, z: 0}
+  temp: {x: 0, y: 0, z: 0}
 --- !u!1 &2087024578
 GameObject:
   m_ObjectHideFlags: 0
@@ -40133,6 +40267,7 @@ GameObject:
   - component: {fileID: 2127647355}
   - component: {fileID: 2127647354}
   - component: {fileID: 2127647357}
+  - component: {fileID: 2127647358}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -40225,8 +40360,23 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10, y: 2.220446e-16, z: 10}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 10, y: 0.81923676, z: 10}
+  m_Center: {x: 0, y: -0.40961838, z: 0}
+--- !u!114 &2127647358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127647352}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3626016f44c742640b59ca0260c818ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 1346376989}
+  veloc: {x: 0, y: 0, z: 0}
+  temp: {x: 0, y: 0, z: 0}
 --- !u!1 &2131952302
 GameObject:
   m_ObjectHideFlags: 0
@@ -67980,7 +68130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43dbab6e18df1014caff20ab63f62ed1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bricks: {fileID: 8296172668321975597}
+  bricks: {fileID: 7553868939667729459}
   ball: {fileID: 1346376989}
   veloc: {x: 0, y: 0, z: 0}
 --- !u!4 &7618251011713360280
