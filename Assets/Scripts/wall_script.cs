@@ -5,6 +5,7 @@ using UnityEngine;
 public class wall_script : MonoBehaviour
 {
     public GameObject ball;
+    public AudioSource audioSource;
 
     Rigidbody rb;
 
@@ -25,8 +26,7 @@ public class wall_script : MonoBehaviour
         if (collision.gameObject.name == ball.name)
         {
             veloc = rb.velocity;
-            //bricks.active = false;
-            //Scoring.score += 1;
+            audioSource.Play();
         }
     }
 
@@ -37,7 +37,8 @@ public class wall_script : MonoBehaviour
         if (other.gameObject.name == ball.name)
         {
             //bricks.active = false;
-            
+            rb.velocity = veloc;
+
 
         }
     }

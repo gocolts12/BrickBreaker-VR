@@ -14,11 +14,13 @@ public class Back_wall_script : MonoBehaviour
 
     public Vector3 temp;
 
+    public AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
-        //rb = ball.GetComponent<Rigidbody>();
-        //rb.velocity = new Vector3(0, 0, 5);
+        rb = ball.GetComponent<Rigidbody>();
+        rb.velocity = new Vector3(0, 0, 5);
 
         brick.active = true;
         //Debug.Log("Do something here");
@@ -42,6 +44,7 @@ public class Back_wall_script : MonoBehaviour
             // brick.active = false;
             //If the GameObject's name matches the one you suggest, output this message in the console
             //veloc = rb.velocity;
+            audioSource.Play();
             Debug.Log("ball 2");
         }
 

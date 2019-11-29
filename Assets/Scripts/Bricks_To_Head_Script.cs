@@ -54,7 +54,7 @@ public class Bricks_To_Head_Script : MonoBehaviour
         if (other.gameObject.name == ball.name)
         {
             //bricks.active = false;
-            rball.velocity += veloc;
+            rball.velocity = veloc;
             rbrick.velocity = new Vector3(0, 0, -5);
 
         }
