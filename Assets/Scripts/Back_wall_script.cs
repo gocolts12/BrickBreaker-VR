@@ -16,14 +16,18 @@ public class Back_wall_script : MonoBehaviour
 
     public AudioSource audioSource;
 
+    public GameObject gameOver;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = ball.GetComponent<Rigidbody>();
         rb.velocity = new Vector3(0, 0, 5);
 
-        brick.active = true;
+        brick.SetActive(true);
         //Debug.Log("Do something here");
+
+        gameOver.SetActive(false);
     }
 
     void OnCollisionEnter(Collision collision)
@@ -46,6 +50,11 @@ public class Back_wall_script : MonoBehaviour
             //veloc = rb.velocity;
             audioSource.Play();
             Debug.Log("ball 2");
+            Lives.lives -= 1;
+            if (Lives.lives <= 0) {
+                rb.velocity = new Vector3(0, 0, 0);
+                gameOver.SetActive(true);
+            }
         }
 
     }
