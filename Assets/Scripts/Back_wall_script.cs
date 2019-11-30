@@ -18,6 +18,10 @@ public class Back_wall_script : MonoBehaviour
 
     public GameObject gameOver;
 
+    public GameObject sound;
+
+    public GameObject lifesound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,8 +55,10 @@ public class Back_wall_script : MonoBehaviour
             audioSource.Play();
             Debug.Log("ball 2");
             Lives.lives -= 1;
+            lifesound.SetActive(true);
             if (Lives.lives <= 0) {
                 rb.velocity = new Vector3(0, 0, 0);
+                sound.SetActive(false);
                 gameOver.SetActive(true);
             }
         }
@@ -67,6 +73,7 @@ public class Back_wall_script : MonoBehaviour
         {
             /*temp = new Vector3(rb.velocity.x, rb.velocity.y, rb.velocity.z + 1);
             rb.velocity = temp;*/
+            lifesound.SetActive(false);
         }
     }
 

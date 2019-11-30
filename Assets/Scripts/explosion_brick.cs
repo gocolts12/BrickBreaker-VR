@@ -14,6 +14,8 @@ public class explosion_brick : MonoBehaviour
 
     public Vector3 veloc;
 
+    public AudioSource audioSource;
+
 
     void Start()
     {
@@ -56,7 +58,8 @@ public class explosion_brick : MonoBehaviour
                 //explode.Stop();
             }
 
-            Scoring.score += 1;
+            audioSource.Play();
+            Scoring.score += 2;
         }
     }
 

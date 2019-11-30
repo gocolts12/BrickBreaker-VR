@@ -7,10 +7,14 @@ public class Bricks_To_Head_Script : MonoBehaviour
     public GameObject bricks;
     public GameObject ball;
 
+   // public GameObject player;
+
     Rigidbody rball;
     Rigidbody rbrick;
 
     public Vector3 veloc;
+
+    public AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -44,6 +48,7 @@ public class Bricks_To_Head_Script : MonoBehaviour
             veloc = rball.velocity;
             //bricks.active = false;
             Scoring.score += 1;
+            audioSource.Play();
         }
     }
 

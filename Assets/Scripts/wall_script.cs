@@ -7,16 +7,16 @@ public class wall_script : MonoBehaviour
     public GameObject ball;
     public AudioSource audioSource;
 
-    Rigidbody rb;
+   // Rigidbody rb;
 
-    public Vector3 veloc;
+    //public Vector3 veloc;
 
-    public Vector3 temp;
+    //public Vector3 temp;
     // Start is called before the first frame update
     void Start()
     {
-        rb = ball.GetComponent<Rigidbody>();
-        rb.velocity = new Vector3(0, 0, 5);
+        //rb = ball.GetComponent<Rigidbody>();
+        //rb.velocity = new Vector3(0, 0, 5);
     }
 
     void OnCollisionEnter(Collision collision)
@@ -25,7 +25,7 @@ public class wall_script : MonoBehaviour
         //Check for a match with the specified name on any GameObject that collides with your GameObject
         if (collision.gameObject.name == ball.name)
         {
-            veloc = rb.velocity;
+            //veloc = rb.velocity;
             audioSource.Play();
         }
     }
@@ -37,7 +37,7 @@ public class wall_script : MonoBehaviour
         if (other.gameObject.name == ball.name)
         {
             //bricks.active = false;
-            rb.velocity = veloc;
+            //rb.velocity = veloc;
 
 
         }

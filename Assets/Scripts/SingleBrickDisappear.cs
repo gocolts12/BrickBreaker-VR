@@ -11,6 +11,8 @@ public class SingleBrickDisappear : MonoBehaviour
 
     public Vector3 veloc;
 
+    public AudioSource audioSource;
+
     void Start()
     {
         rb = ball.GetComponent<Rigidbody>();
@@ -28,6 +30,7 @@ public class SingleBrickDisappear : MonoBehaviour
             veloc = rb.velocity;
             //bricks.active = false;
             Scoring.score += 1;
+            audioSource.Play();
         }
     }
 
