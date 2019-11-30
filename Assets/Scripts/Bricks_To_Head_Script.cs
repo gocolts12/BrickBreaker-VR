@@ -58,6 +58,10 @@ public class Bricks_To_Head_Script : MonoBehaviour
         //print("No longer in contact with " + other.transform.name);
         if (other.gameObject.name == ball.name)
         {
+            //veloc.x *= (float)1.1;
+            //veloc.y *= (float)1.1;
+            //veloc.z *= (float)1.1;
+
             //bricks.active = false;
             rball.velocity = veloc;
             rbrick.velocity = new Vector3(0, 0, -5);

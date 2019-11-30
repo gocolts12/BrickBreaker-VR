@@ -69,9 +69,10 @@ public class explosion_brick : MonoBehaviour
         //print("No longer in contact with " + other.transform.name);
         if (other.gameObject.name == ball.name)
         {
+
             bricks.active = false;
             bricks2.active = false;
-            rb.velocity += veloc;
+            //rb.velocity == veloc;
 
             //explode.Emit(100);
             //if (explode.isPlaying) explode.Stop();
