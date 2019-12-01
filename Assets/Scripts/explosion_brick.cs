@@ -45,7 +45,7 @@ public class explosion_brick : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("collision");
+        Debug.Log("EXPLOSION collision");
         //Check for a match with the specified name on any GameObject that collides with your GameObject
         if (collision.gameObject.name == ball.name)
         {
@@ -65,19 +65,13 @@ public class explosion_brick : MonoBehaviour
 
     void OnCollisionExit(Collision other)
     {
-        Debug.Log("Exit");
+        Debug.Log("EXPLOSION Exit");
         //print("No longer in contact with " + other.transform.name);
         if (other.gameObject.name == ball.name)
         {
 
             bricks.active = false;
             bricks2.active = false;
-
-           // veloc.x *= (float)1.5;
-           // veloc.y *= (float)1.5;
-           // veloc.z *= (float)1.5;
-
-            //rb.velocity = veloc;
 
             //explode.Emit(100);
             //if (explode.isPlaying) explode.Stop();
