@@ -27,9 +27,7 @@ public class SingleBrickDisappear : MonoBehaviour
         //Check for a match with the specified name on any GameObject that collides with your GameObject
         if (collision.gameObject.name == ball.name)
         {
-            //double newX, newY, newZ = 0;
             veloc = rb.velocity;
-            //veloc.x = veloc.x * (float)1.1;
             //bricks.active = false;
             Scoring.score += 1;
             audioSource.Play();
@@ -42,11 +40,11 @@ public class SingleBrickDisappear : MonoBehaviour
         //print("No longer in contact with " + other.transform.name);
         if (other.gameObject.name == ball.name)
         {
-            //veloc.x *= (float)1.1;
-            //veloc.y *= (float)1.1;
-            //veloc.z *= (float)1.1;
+            //veloc.x *= (float)1.5;
+            //veloc.y *= (float)1.5;
+            //veloc.z *= (float)1.5;
             bricks.active = false;
-            rb.velocity = veloc;
+            //rb.velocity += veloc;
             
         }
     }

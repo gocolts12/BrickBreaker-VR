@@ -72,7 +72,12 @@ public class explosion_brick : MonoBehaviour
 
             bricks.active = false;
             bricks2.active = false;
-            //rb.velocity == veloc;
+
+           // veloc.x *= (float)1.5;
+           // veloc.y *= (float)1.5;
+           // veloc.z *= (float)1.5;
+
+            //rb.velocity = veloc;
 
             //explode.Emit(100);
             //if (explode.isPlaying) explode.Stop();
